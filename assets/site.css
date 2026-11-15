@@ -226,3 +226,21 @@ footer.site a { color: var(--muted); }
 
 /* Plan page step headings */
 .article .body h2.step-h { display: flex; align-items: center; gap: 14px; }
+
+/* Guarantee */
+.guarantee-pill { background: #fff; border: 1.5px solid var(--ink); border-radius: 10px; padding: 12px 14px; font-size: 0.97rem; max-width: 34em; }
+.guarantee-pill b { color: var(--accent); }
+.guarantee { padding-top: 0; }
+.gbox { background: var(--ink); color: #fff; border-radius: 16px; padding: 32px 24px; display: grid; gap: 24px; align-items: center; }
+@media (min-width: 760px) { .gbox { grid-template-columns: 150px 1fr; padding: 48px; gap: 40px; } }
+.gbox .prose p { color: #c9d6e6; }
+.gbox .eyebrow { color: #ff8a73; }
+.gseal { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); outline: 2px dashed rgba(255,255,255,0.35); outline-offset: 5px; display: grid; place-content: center; text-align: center; }
+@media (min-width: 760px) { .gseal { width: 150px; height: 150px; } }
+.gseal span { font-family: var(--display); font-weight: 800; font-size: 2.6rem; line-height: 1; }
+.gseal small { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; line-height: 1.3; color: #ff8a73; margin-top: 4px; }
+.gterms { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 14px; }
+.gterms ul { margin: 0; padding: 0; display: grid; gap: 10px; }
+.gterms li { list-style: none; color: var(--muted); padding-left: 22px; position: relative; }
+.gterms li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 10px; height: 2px; background: var(--accent); }
+.gterms b { color: var(--ink); }
