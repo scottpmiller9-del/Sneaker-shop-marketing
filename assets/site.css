@@ -204,3 +204,25 @@ footer.site a { color: var(--muted); }
 .callout { background: var(--wash); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
 .callout p { color: var(--ink) !important; }
 .checklist { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; display: grid; gap: 12px; }
+
+/* Icons */
+.ico { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: #fff; border: 1.5px solid var(--ink); color: var(--accent); flex: none; }
+.ico svg { width: 22px; height: 22px; }
+.ico.lg { width: 48px; height: 48px; background: var(--wash); border: 0; }
+.ico.lg svg { width: 26px; height: 26px; }
+
+/* Plan teaser as icon cards */
+.playbook { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; padding: 0; border: 0; counter-reset: pb; }
+@media (min-width: 900px) { .playbook { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
+.playbook li { list-style: none; counter-increment: pb; background: var(--wash); border-radius: 12px; padding: 18px 16px; display: grid; gap: 8px; align-content: start; position: relative; border: 0; }
+.playbook li::before { content: counter(pb, decimal-leading-zero); position: absolute; top: 16px; right: 16px; left: auto; font-family: var(--mono); font-size: 0.75rem; font-weight: 600; color: var(--muted); }
+.playbook h3 { font-size: 1rem; margin-top: 6px; }
+.playbook p { color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
+
+/* Services with icons */
+.services li { grid-template-columns: 44px 1fr; column-gap: 16px; align-items: start; }
+.services li .ico { grid-row: span 2; }
+.services li h3 { align-self: end; }
+
+/* Plan page step headings */
+.article .body h2.step-h { display: flex; align-items: center; gap: 14px; }
