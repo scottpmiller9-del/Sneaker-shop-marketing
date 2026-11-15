@@ -27,6 +27,11 @@
     X-Frame-Options = "SAMEORIGIN"
 
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/logos/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
