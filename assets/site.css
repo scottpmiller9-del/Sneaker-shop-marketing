@@ -103,6 +103,7 @@ header.top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255
 .guide { background: var(--wash); }
 .two { display: grid; gap: 40px; }
 @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; } }
+.quotes { display: grid; gap: 28px; }
 blockquote.quote { margin: 0; background: #fff; border: 2px solid var(--ink); border-radius: 12px; padding: 30px 28px; display: grid; gap: 20px; box-shadow: 10px 10px 0 rgba(10,37,64,0.08); }
 blockquote.quote p { font-size: 1.08rem; line-height: 1.6; }
 blockquote.quote footer { padding: 0; display: flex; align-items: center; gap: 14px; font-size: 0.95rem; color: var(--ink); }
