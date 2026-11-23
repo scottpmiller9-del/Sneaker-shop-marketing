@@ -186,6 +186,9 @@ blockquote.quote footer span { color: var(--muted); display: block; font-size: 0
 .final .btn.ghost { border-color: #fff; color: #fff; }
 .final .btn.ghost:hover { background: #fff; color: var(--ink); }
 .final .text-link { color: #fff; }
+.final-grid { display: grid; gap: 28px; align-items: center; justify-items: start; }
+.headshot { display: block; width: 132px; height: 132px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); box-shadow: 0 0 0 6px rgba(214,52,28,0.9); }
+@media (min-width: 900px) { .final-grid { grid-template-columns: 240px 1fr; gap: 56px; } .headshot { width: 240px; height: 240px; } }
 footer.site { padding: 28px 0 36px; font-size: 0.85rem; color: var(--muted); }
 footer.site .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 footer.site a { color: var(--muted); }
