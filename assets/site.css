@@ -74,6 +74,9 @@ header.top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255
 .hero .btn.ghost:hover { background: #fff; color: var(--ink); }
 .hero .phone-note { color: rgba(255,255,255,0.8); }
 .hero .phone-note b, .hero .phone-note .text-link { color: #fff; }
+.hero .boxlabel, .hero .guarantee-pill { color: var(--ink); }
+.hero .guarantee-pill .text-link { color: var(--ink); }
+.hero .guarantee-pill .text-link:hover { color: var(--accent); }
 .hero-copy { display: grid; gap: 22px; }
 
 /* Results label */
